@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="./css/style.css" ></link>
+		<link rel="stylesheet" href="./css/camera.css" ></link>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="./js/camera.min.js"></script>
+	</head>
+	<body>
+	hello
+	<!--
+
+		<div id="gallery" class="camera_wrap">
+		    <div data-src="./images/1.jpg"></div>
+		    <div data-src="./images/2.jpeg"></div>
+		</div>-->
+
+
+		<div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-thumb="./images/1.jpg" data-src="./images/1.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    Camera is a responsive/adaptive slideshow. <em>Try to resize the browser window</em>
+                </div>
+            </div>
+            <div data-thumb="./images/2.jpeg" data-src="./images/2.jpeg">
+                <div class="camera_caption fadeFromBottom">
+                    It uses a light version of jQuery mobile, <em>navigate the slides by swiping with your fingers</em>
+                </div>
+            </div>
+            
+        </div><!-- #camera_wrap_1 -->
+
+	</body>
+
+	<script>
+		jQuery('#camera_wrap_1').camera(); //the basic method
+
+		jQuery('#camera_wrap_1').camera({ //here I declared some settings, the height and the presence of the thumbnails 
+			height: '41%',
+			pagination: false,
+			thumbnails: true
+		});
+
+	</script>
+
+
+</html>
