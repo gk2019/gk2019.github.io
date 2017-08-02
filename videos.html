@@ -1,0 +1,75 @@
+<html>
+	<head>
+
+		<link type="text/css" rel="stylesheet" href="./css/ycp.css" />
+	</head>
+
+	<body>
+
+		
+
+	<div style="position:fixed; right:0px;">
+		
+		<div>American</div>
+	</div>
+<div class="demo" data-ycp_title="GK" data-ycp_channel="PL1BpFU9Gf4DTTnWuY3l4auwFISjMS5d-x"></div> <!-- By PlayListId -->
+
+
+	</body>
+
+	<!-- Selector by Id -->
+	<!--<div id="unix" data-ycp_title="#Demo - Bachors.com" data-ycp_channel="UCoiS7s7HrE7bHNuzERi-FCQ"></div>--> <!-- By ChannelId -->
+
+	<!-- Selector by ClassName -->
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/ycp.js"></script>
+	<script>
+	$(function() {
+	        
+	    $("#unix").ycp({
+	        apikey : 'AIzaSyAVP-1_vtyPWOwjhdwyozXAtFcS3D-fB3g',
+	        playlist : 7,
+	        autoplay : true,
+	        related : true
+	    });
+				
+	    $(".demo").ycp({
+	        apikey : 'AIzaSyAVP-1_vtyPWOwjhdwyozXAtFcS3D-fB3g'
+	    });
+	            
+	});
+
+
+
+$('#koreanver').show();
+$('#englishver').hide();
+
+	$('#korea').click(function(){
+		// your logic for when the div is clicked;
+		console.log('click detected!!');
+	})
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</html>
+
+
+
+
+
+
+
+
+
