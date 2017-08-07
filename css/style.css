@@ -1,5 +1,10 @@
+@font-face {
+    font-family: BMDOHYEON;
+    src: url("font/BMDOHYEON_otf.otf") format("opentype"), url("font/BMDOHYEON_ttf.ttf")  
+    format("truetype");}
+
 body{
-	font-family: sans-serif;
+	font-family: BMDOHYEON;
 	font-size:20px;
 }
 
